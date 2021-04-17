@@ -1335,6 +1335,9 @@ percent_omit_indiv</code></pre>
 ## Residual standard error: 0.1155 on 25 degrees of freedom
 ## Multiple R-squared:  0.301,  Adjusted R-squared:  0.1332 
 ## F-statistic: 1.794 on 6 and 25 DF,  p-value: 0.1412</code></pre>
+<blockquote>
+<p>How do we interpret the results above? What factors are significant? Is the interaction between education and sex significant?</p>
+</blockquote>
 <pre class="r"><code>percent_omit_indiv %&gt;%
   lm(formula = percent ~ occ) %&gt;%
   summary()</code></pre>
@@ -1357,7 +1360,7 @@ percent_omit_indiv</code></pre>
 ## Multiple R-squared:  0.1894, Adjusted R-squared:  0.1624 
 ## F-statistic: 7.009 on 1 and 30 DF,  p-value: 0.0128</code></pre>
 <blockquote>
-<p>How do we interpret the results above? What factors are significant? Is the interaction between education and sex significant?</p>
+<p>How does variance explain change across the two models?</p>
 </blockquote>
 <p>Let’s save our linear regression model to an object, so we can visualize the effect of occupation.</p>
 <pre class="r"><code>model_1 &lt;- percent_omit_indiv %&gt;%
